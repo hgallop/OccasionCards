@@ -1,16 +1,25 @@
 <resources>
     <string name="app_name">Occasion Cards</string>
-    <string-array name="planets_array">
+    <string-array name="cards_array">
+        <item>Choose Card</item>
         <item>New Years</item>
-        <item>Groundhog's Day</item>
-        <item>Valentine's Day</item>
-        <item>St. Patrick's Day</item>
+        <item>Groundhog\'s Day</item>
+        <item>Valentine\'s Day</item>
+        <item>St. Patrick\'s Day</item>
         <item>Easter</item>
-        <item>Mother's Day</item>
-        <item>Father's Day</item>
+        <item>Mother\'s Day</item>
+        <item>Father\'s Day</item>
         <item>Independence Day</item>
         <item>Halloween</item>
         <item>Thanksgiving</item>
         <item>Christmas</item>
     </string-array>
+
+    <string name="happy">Happy</string>
+    <string name="merry">Merry</string>
+    <string name="you">To You!</string>
+
+    <string name="donut">Donut go nuts!</string>
+    <string name="but">but...</string>
+    <string name="birthday">Birthday</string>
 </resources>

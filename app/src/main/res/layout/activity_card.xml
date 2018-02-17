@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/greeting_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/gradientColorStart"
+        android:textSize="@dimen/greeting_size"
+        tools:text="@string/happy" />
+
+    <TextView
+        android:id="@+id/greeting_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greeting_text1"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/pad"
+        android:fontFamily="casual"
+        android:textColor="@color/gradientColorStart"
+        android:textSize="@dimen/greeting_size"
+        android:textStyle="italic"
+        tools:text="@string/birthday" />
+
+    <TextView
+        android:id="@+id/to_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/pad"
+        android:fontFamily="cursive"
+        android:textColor="@color/gradientColorStart"
+        android:textSize="@dimen/header_size"
+        android:text="@string/you" />
+
+</RelativeLayout>

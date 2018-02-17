@@ -12,12 +12,14 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/header_size"
         android:gravity="center"
-        tools:text="Occasion\nCards"
+        android:text="@string/app_name"
         android:textColor="@color/colorPrimaryDark"/>
 
     <Spinner
+        android:id="@+id/card_spinner"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
     </Spinner>
 
