@@ -12,14 +12,14 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    //variable for spinner
     Spinner cardSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //initialize spinner
          cardSpinner = findViewById(R.id.card_spinner);
         // Creates an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -29,13 +29,19 @@ public class MainActivity extends AppCompatActivity {
         // Applies the adapter to the spinner
         cardSpinner.setAdapter(adapter);
 
+        //sets listener to user choice from spinner
         cardSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapter, View view, int pos, long l) {
+                //gets position
                 adapter.getItemAtPosition(pos);
+                //recognizes user choice is other than "choose card"
                 if (pos > 0){
+                    //creates intent to open card activity
                     Intent cardIntent = new Intent(MainActivity.this, CardActivity.class);
+                    //sends user choice to card activity
                     cardIntent.putExtra("cardChoice", pos);
+                    //creates intent to open card activity
                     startActivity(cardIntent);
                 }
             }

@@ -3,19 +3,21 @@ package com.example.android.occasioncards;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CardActivity extends AppCompatActivity {
 
+    //creates variable for each view that will change
     private ImageView backgroundImage;
     private TextView greetingText1;
     private TextView greetingText2;
     private TextView youText;
 
+    //variable to store user's card choice
     private int cardChoice;
 
+    //declare array of Card objects
     Card[] cards = new Card[12];
 
     @Override
@@ -23,17 +25,21 @@ public class CardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card);
 
+        //initialize variable for each view that will change
         backgroundImage = findViewById(R.id.background_image);
         greetingText1 = findViewById(R.id.greeting_text1);
         greetingText2 = findViewById(R.id.greeting_text2);
         youText = findViewById(R.id.to_you);
 
+        //get intent from MainActivity
         Intent intent = getIntent();
+        //store users card choice in variable
         cardChoice = intent.getIntExtra("cardChoice", 0);
-        Log.v("cardChoice: ", "" + cardChoice);
 
+        //calls method that creates the objects in card array
         generateCards();
 
+        //switch statement to call set card for correct card from user choice
         switch (cardChoice){
             case 1:
                 setCard(cards[0]);
@@ -74,6 +80,7 @@ public class CardActivity extends AppCompatActivity {
         }
     }
 
+    //method to reset spinner to "choose card"
     @Override
     public void onBackPressed() {
         Intent cardIntent = new Intent(CardActivity.this, MainActivity.class);
@@ -81,6 +88,7 @@ public class CardActivity extends AppCompatActivity {
         startActivity(cardIntent);
    }
 
+   //mathod to create each Card object in card array
    private void generateCards(){
        cards[0] = new Card(R.string.happy, R.string.birthday, R.drawable.donut, getResources().getColor(R.color.gradientColorEnd));
        cards[1] = new Card(R.string.happy, R.string.year, R.drawable.newyear, getResources().getColor(R.color.white));
@@ -96,6 +104,7 @@ public class CardActivity extends AppCompatActivity {
        cards[11] = new Card(R.string.merry, R.string.christmas, R.drawable.christmas, getResources().getColor(R.color.white));
    }
 
+   //method to set correct values to each view in card
     private void setCard(Card card){
         backgroundImage.setImageResource(card.getImageResourceId());
         greetingText1.setText(card.getStringResourceId1());
