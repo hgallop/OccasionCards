@@ -1,13 +1,10 @@
 package com.example.android.occasioncards;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 public class CardActivity extends AppCompatActivity {
@@ -86,17 +83,17 @@ public class CardActivity extends AppCompatActivity {
 
    private void generateCards(){
        cards[0] = new Card(R.string.happy, R.string.birthday, R.drawable.donut, getResources().getColor(R.color.gradientColorEnd));
-       cards[1] = new Card(R.string.happy, R.string.year, R.drawable.newyear, getResources().getColor(R.color.colorPrimaryLight));
-       cards[2] = new Card(R.string.happy, R.string.groundhog, R.drawable.groundhog, getResources().getColor(R.color.colorPrimary));
-       cards[3] = new Card(R.string.happy, R.string.valentine, R.drawable.valentine, getResources().getColor(R.color.colorPrimaryDark));
-       cards[4] = new Card(R.string.happy, R.string.patrick, R.drawable.patrick, getResources().getColor(R.color.gradientColorEnd));
+       cards[1] = new Card(R.string.happy, R.string.year, R.drawable.newyear, getResources().getColor(R.color.white));
+       cards[2] = new Card(R.string.happy, R.string.groundhog, R.drawable.groundhog, getResources().getColor(R.color.black));
+       cards[3] = new Card(R.string.happy, R.string.valentine, R.drawable.valentine, getResources().getColor(R.color.red));
+       cards[4] = new Card(R.string.happy, R.string.patrick, R.drawable.patrick, getResources().getColor(R.color.black));
        cards[5] = new Card(R.string.happy, R.string.easter, R.drawable.easter, getResources().getColor(R.color.gradientColorEnd));
        cards[6] = new Card(R.string.happy, R.string.mother, R.drawable.mother, getResources().getColor(R.color.white));
-       cards[7] = new Card(R.string.happy, R.string.father, R.drawable.fathers, getResources().getColor(R.color.black));
-        cards[8] = new Card(R.string.happy, R.string.independence, R.drawable.independence, getResources().getColor(R.color.colorPrimaryDark));
-       cards[9] = new Card(R.string.happy, R.string.halloween, R.drawable.halloween, getResources().getColor(R.color.colorPrimaryLight));
-       cards[10] = new Card(R.string.happy, R.string.thanks, R.drawable.thanks, getResources().getColor(R.color.colorPrimaryDark));
-       cards[11] = new Card(R.string.merry, R.string.christmas, R.drawable.christmas, getResources().getColor(R.color.colorPrimaryDark));
+       cards[7] = new Card(R.string.happy, R.string.father, R.drawable.fathers, getResources().getColor(R.color.colorPrimary));
+        cards[8] = new Card(R.string.happy, R.string.independence, R.drawable.independence, getResources().getColor(R.color.black));
+       cards[9] = new Card(R.string.happy, R.string.halloween, R.drawable.halloween, getResources().getColor(R.color.orange));
+       cards[10] = new Card(R.string.happy, R.string.thanks, R.drawable.thanks, getResources().getColor(R.color.orange));
+       cards[11] = new Card(R.string.merry, R.string.christmas, R.drawable.christmas, getResources().getColor(R.color.white));
    }
 
     private void setCard(Card card){

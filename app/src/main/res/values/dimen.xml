@@ -2,6 +2,7 @@
 <resources>
     <dimen name="gradient">180dp</dimen>
     <dimen name="header_size">56sp</dimen>
-    <dimen name="greeting_size">56dp</dimen>
-    <dimen name="pad">8dp</dimen>
+    <dimen name="greeting_size">32sp</dimen>
+    <dimen name="pad">12dp</dimen>
+    <dimen name="margin">20dp</dimen>
 </resources>

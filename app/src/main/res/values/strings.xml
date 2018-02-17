@@ -16,6 +16,8 @@
         <item>@string/christmas</item>
     </string-array>
 
+    <string name="instruct">Screen shot a fun holiday card! Choose a card from the drop-down menu.</string>
+
     <string name="happy">Happy</string>
     <string name="merry">Merry</string>
     <string name="you">To You!</string>
