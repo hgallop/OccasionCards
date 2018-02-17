@@ -2,24 +2,33 @@
     <string name="app_name">Occasion Cards</string>
     <string-array name="cards_array">
         <item>Choose Card</item>
-        <item>New Years</item>
-        <item>Groundhog\'s Day</item>
-        <item>Valentine\'s Day</item>
-        <item>St. Patrick\'s Day</item>
-        <item>Easter</item>
-        <item>Mother\'s Day</item>
-        <item>Father\'s Day</item>
-        <item>Independence Day</item>
-        <item>Halloween</item>
-        <item>Thanksgiving</item>
-        <item>Christmas</item>
+        <item>@string/birthday</item>
+        <item>@string/year</item>
+        <item>@string/groundhog</item>
+        <item>@string/valentine</item>
+        <item>@string/patrick</item>
+        <item>@string/easter</item>
+        <item>@string/mother</item>
+        <item>@string/father</item>
+        <item>@string/independence</item>
+        <item>@string/halloween</item>
+        <item>@string/thanks</item>
+        <item>@string/christmas</item>
     </string-array>
 
     <string name="happy">Happy</string>
     <string name="merry">Merry</string>
     <string name="you">To You!</string>
-
-    <string name="donut">Donut go nuts!</string>
-    <string name="but">but...</string>
     <string name="birthday">Birthday</string>
+    <string name="year">New Year\'s Day</string>
+    <string name="groundhog">Groundhog\'s Day</string>
+    <string name="valentine">Valentine\'s Day</string>
+    <string name="patrick">St. Patrick\'s Day</string>
+    <string name="easter">Easter</string>
+    <string name="mother">Mother\'s Day</string>
+    <string name="father">Father\'s Day</string>
+    <string name="independence">Independence Day</string>
+    <string name="halloween">Halloween</string>
+    <string name="thanks">Thanksgiving</string>
+    <string name="christmas">Christmas</string>
 </resources>
