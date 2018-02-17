@@ -16,6 +16,8 @@ public class CardActivity extends AppCompatActivity {
 
     private int cardChoice;
 
+    Card[] cards = new Card[10];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +30,10 @@ public class CardActivity extends AppCompatActivity {
         Intent intent = getIntent();
         cardChoice = intent.getIntExtra("cardChoice", 0);
 
+        generateCards();
+
         switch (cardChoice){
-            case 1:;
+            case 1: setCard(cards[0]);
             case 2:;
             case 3:;
             case 4:;
@@ -44,14 +48,13 @@ public class CardActivity extends AppCompatActivity {
     }
 
     private void generateCards(){
-        Card[] cards = new Card[10];
-        for(int i = 0; i < cards.length; i++){
-
-        }
+        cards[0] = new Card(R.string.happy, R.string.birthday, R.drawable.donut);
     }
 
-    private void setCard(){
-
+    private void setCard(Card card){
+        backgroundImage.setImageResource(card.getImageResourceId());
+        greetingText1.setText(card.getStringResourceId1());
+        greetingText2.setText(card.getStringResourceId2());
     }
 
 }
