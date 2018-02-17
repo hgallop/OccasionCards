@@ -4,11 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_background"
     tools:context="com.example.android.occasioncards.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textSize="@dimen/header_size"
+        android:gravity="center"
+        tools:text="Occasion\nCards"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Spinner>
 
 </LinearLayout>
