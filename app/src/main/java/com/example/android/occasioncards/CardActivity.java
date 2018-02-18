@@ -14,7 +14,7 @@ public class CardActivity extends AppCompatActivity {
     private TextView greetingText2;
     private TextView youText;
 
-    //variable to store user's card choice
+    //variable to store users card choice
     private int cardChoice;
 
     //declare array of Card objects
